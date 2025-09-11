@@ -4,75 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qaf0wol.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
     <style>
-        html
-        {
-            font-family: "mauritius", serif;
+        .fredoka-headers{
+            font-family: "Fredoka", sans-serif;
             font-weight: 400;
             font-style: normal;
         }
-        .color-box
-        {
+        .nunito-body{
+            font-family: "Nunito", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .color-box{
             height: 75px;
             width: 75px;
         }
-        #box1
-        {
-            background-color: #F3E1DD;
+        #box1{
+            background-color: #6B1D3F;
         }
-         #box2
-        {
-            background-color: #89023E;
+         #box2{
+            background-color: #FFF7F5;
         }
-        #box3
-        {
-            background-color: #CC7178;
+        #box3{
+            background-color: #FAE5E1;
         }
         #box4
         {
-            background-color: #FFD9DA;
+            background-color: #E07A89;
         }
-        #box5
-        {
-            background-color: #C7D9B7;
+        #box5{
+            background-color: #9FBC89;
         }
 
-        .small-text
-        {
-            font-size: 12px;
-        }
-        h3
-        {
+        h3{
+            font-family: "Fredoka";
             font-size: 20px;
         }
-        h2
-        {
+        h2{
+            font-family: "Fredoka";
             font-size: 24px;
         }
-        h1
-        {
+        h1{
+            font-family: "Fredoka";
             font-size: 28px;
         }
-        a{
-            text-decoration: none;
-            color: #1C1F33;
+        p{
+            font-family: "Nunito";
+        }
+        .small-text{
+            font-family: "Nunito";
+            font-size: 12px;
+        }
+
+        a:link{
+            color: #6B1D3F;
+            text-decoration: none; 
+        }
+        a:visited{
+            color: #9FBC89;
         }
         a:hover{
             text-decoration: underline;
-            color: #C6C7C4;
+            color: #E07A89;
         }
-        a:visited{
-            color: #BB0A21;
+
+        .button{
+            background-color: #FFF7F5;
+            border: none;
+            color: #6B1D3F;
+            padding: 12px, 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px
         }
+        .button:hover{
+            background-color: #FAE5E1;
+            color: #6B1D3F;
+        }
+        .button:focus{
+            background-color: #9FBC89;
+            color: #6B1D3F;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
     </style>
 </head>
+
 <body>
-    <div class="color-box" id="box1">1</div>
-    <div class="color-box" id="box2">2</div>
-    <div class="color-box" id="box3">3</div>
-    <div class="color-box" id="box4">4</div>
-    <div class="color-box" id="box5">5</div>
+    <div class="color-box" id="box1">1: #FFF7F5 </div>
+    <div class="color-box" id="box2">2: #FFF7F5 </div>
+    <div class="color-box" id="box3">3: #FAE5E1</div>
+    <div class="color-box" id="box4">4: #E07A89</div>
+    <div class="color-box" id="box5">5: #9FBC89</div>
 
     <h1>This is a heading 1</h1>
     <h2>This is a heading 2</h2>
@@ -81,8 +118,22 @@
     <p>This is a paragraph test</p>
     <p class="small-text">This is a small text</p>
 
-    <p><a href="#">This is a link</a></p>
+    <p><a href="https://media.tenor.com/sdq82DgPnesAAAAM/cat-laugh.gif">This is a link</a></p>
 
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+
+        <br><br>
+        <button class="button">Submit</button>
+
+    </form>
 
 </body>
 </html>
