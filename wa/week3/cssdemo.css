@@ -1,0 +1,69 @@
+
+.fredoka-headers{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.nunito-body{
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h3{
+    font-family: "Fredoka";
+    font-size: 20px;
+    color: #6B1D3F;
+}
+h2{
+    font-family: "Fredoka";
+    font-size: 24px;
+    color: #6B1D3F;
+}
+h1{
+    font-family: "Fredoka";
+    font-size: 28px;
+    color: #6B1D3F;
+
+}
+p{
+    font-family: "Nunito";
+    color: #6B1D3F;
+}
+a:link{
+    color: #6B1D3F;
+    text-decoration: none; 
+}
+a:visited{
+    color: #6B1D3F;
+}
+a:hover{
+    text-decoration: underline;
+    color: #E07A89;
+}
+
+.button{
+    background-color: #FFF7F5;
+    border: none;
+    color: #6B1D3F;
+    padding: 12px, 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+}
+.button:hover{
+    background-color: #FAE5E1;
+    color: #6B1D3F;
+}
+.button:focus{
+    background-color: #62824a;
+    color: #6B1D3F;
+}
+img{
+    border: 3px solid #E07A89;
+}
+
+.off-white-bg{
+    background-color: #FFF7F5;
+    padding: 3px;
+}
