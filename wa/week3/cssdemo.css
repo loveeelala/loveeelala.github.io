@@ -12,55 +12,59 @@
 h3{
     font-family: "Fredoka";
     font-size: 20px;
-    color: #6B1D3F;
+    color: #550212;
 }
 h2{
     font-family: "Fredoka";
     font-size: 24px;
-    color: #6B1D3F;
+    color: #550212;
 }
 h1{
     font-family: "Fredoka";
     font-size: 28px;
-    color: #6B1D3F;
+    color: #550212;
 
 }
 p{
-    font-family: "Nunito";
-    color: #6B1D3F;
+    font-family: "Nunito", sans-serif;
+    color: #550212;
 }
 a:link{
-    color: #6B1D3F;
+    font-family: "Nunito", sans-serif;
+    color: #053225;
     text-decoration: none; 
 }
 a:visited{
-    color: #6B1D3F;
+    font-family: "Nunito", sans-serif;
+    color: #550212;
 }
 a:hover{
+    font-family: "Nunito", sans-serif;
     text-decoration: underline;
-    color: #E07A89;
+    color: #678055;
 }
 
 .button{
-    background-color: #FFF7F5;
+    background-color: #678055;
     border: none;
-    color: #6B1D3F;
-    padding: 12px, 28px;
+    color: #F9F4F5;
+    padding: 12px, 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px
+    font-size: 16px;
+    font-family: "Fredoka", sans-serif;
 }
 .button:hover{
-    background-color: #FAE5E1;
-    color: #6B1D3F;
+    background-color: #053225;
+    color: #F9F4F5;
 }
 .button:focus{
-    background-color: #62824a;
-    color: #6B1D3F;
+    background-color: #053225;
+    color: #F9F4F5;
 }
 img{
-    border: 3px solid #E07A89;
+    border: 3px solid #678055;
 }
 
 .off-white-bg{
