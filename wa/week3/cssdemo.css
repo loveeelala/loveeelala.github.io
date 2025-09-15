@@ -33,11 +33,11 @@ p.nunito-body{
 }
 
 a:link{
-    color: #053225;
+    color: #550212;
     text-decoration: none; 
 }
 a:visited{
-    color: #550212;
+    color: #053225;
 }
 a:hover{
     text-decoration: underline;
