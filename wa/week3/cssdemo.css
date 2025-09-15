@@ -1,45 +1,44 @@
+body{
+    background-color: #F9F4F5;
+    font-family: "Nunito", sans-serif;
+
+}
 
 .fredoka-headers{
     font-family: "Fredoka", sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #550212;
 }
 .nunito-body{
     font-family: "Nunito", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-h3{
-    font-family: "Fredoka";
-    font-size: 20px;
     color: #550212;
 }
-h2{
-    font-family: "Fredoka";
-    font-size: 24px;
-    color: #550212;
-}
-h1{
-    font-family: "Fredoka";
-    font-size: 28px;
-    color: #550212;
 
+h3.fredoka-headers{
+    font-size: 20px;
 }
-p{
-    font-family: "Nunito", sans-serif;
+h2.fredoka-headers{
+    font-size: 24px;
+}
+h1.fredoka-headers{
+    font-size: 28px;
+}
+
+p.nunito-body{
     color: #550212;
 }
+
 a:link{
-    font-family: "Nunito", sans-serif;
     color: #053225;
     text-decoration: none; 
 }
 a:visited{
-    font-family: "Nunito", sans-serif;
     color: #550212;
 }
 a:hover{
-    font-family: "Nunito", sans-serif;
     text-decoration: underline;
     color: #678055;
 }
@@ -48,7 +47,7 @@ a:hover{
     background-color: #678055;
     border: none;
     color: #F9F4F5;
-    padding: 12px, 30px;
+    padding: 3px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -65,9 +64,4 @@ a:hover{
 }
 img{
     border: 3px solid #678055;
-}
-
-.off-white-bg{
-    background-color: #FFF7F5;
-    padding: 3px;
 }
