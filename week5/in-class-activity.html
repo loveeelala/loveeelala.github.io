@@ -14,7 +14,6 @@
         .card-header{
             display: flex;
             justify-content: space-between;
-            flex-direction: column;
             align-items: center;
             gap: 0;
             padding: 1.5rem;
@@ -30,10 +29,19 @@
             border: .15rem solid black;
             text-align: center;
         }
+        .card-content-reflection{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 2rem;
+            border: .15rem solid black;
+            text-align: center;
+        }
 
         button{
-            height: 2rem;
-            width: 2rem;
+            height: 1.85rem;
+            width: 1.75rem;
             border-radius: 10%;
             border: 2px #550212 solid;
         }
@@ -57,11 +65,38 @@
         </div>
     </div>
 
+    <div class="card">
+        <div class="card-header">
+            <h3>Reflection</h3>
+            <button class="expand-btn-reflection" aria-label="Expand Reflection">+</button>
+
+        </div>
+        <div class="card-content-reflection">
+            <p>
+                The flexbox layout helps to support/constrain different user’s experience by being able 
+                to neatly separate the title and the button. It ensures that users can quickly see where 
+                to click without making a mess. Requiring a click, or a keyboard control to reveal details 
+                gives users more control over how much information they consume at a time, making it easier 
+                to avoid distractions. However, it also means that users have to perform an extra action to 
+                get those details, which could make it more of a challenge for those looking to quickly and 
+                readily digest information.
+            </p>
+
+            <p>
+                With this micro-interaction, hiding information behind a toggle is making an assumption that 
+                summary text is always the most relevant starting point, which is not true for all users. 
+                Designers hold the power to decide what is immediately visible and what is hidden, and those 
+                choices influence who feels welcomed/excluded by the interface. While the toggle button can 
+                reduce visual clutter, it can also create barriers for some users, which is why in a larger 
+                Community Resource project, these design choices matter even more. 
+            </p>
+        </div>
+    </div>
+
     <script>
         // JavaScript
 
         let info = false;
-
         const expandBtn = document.querySelector('.expand-btn');
         const details = document.querySelector('.card-content');
 
@@ -71,21 +106,50 @@
         function showInfo(){
             // 'if i click on this button does something happen?'
             // console.log helps you see
-            console.log("hi!");
-            alert("this is an alert");
+            // console.log("hi!");
+            
+            // will send an alert
+            // alert("this is an alert");
+            
             if(info == false){
                 details.style.display = 'flex';
+                expandBtn.textContent = "-";
+                expandBtn.setAttribute("aria-label", "Collapse Card");
                 info = true;
             }
             else
             {
                 details.style.display = 'none';
+                expandBtn.textContent = "+";
+                expandBtn.setAttribute("aria-label", "Expand Card");
                 info = false;
             }
             
-
         }
 
+        let reflectionVis = false;
+            
+        const reflectionBtn = document.querySelector('.expand-btn-reflection');
+        const reflectionContent = document.querySelector('.card-content-reflection');
+            
+        reflectionBtn.addEventListener('click',showReflection)
+        
+        function showReflection(){ 
+
+            if(reflectionVis == false){
+                reflectionContent.style.display = 'flex';
+                reflectionBtn.textContent = "-";
+                reflectionBtn.setAttribute("aria-label", "Collapse Reflection");
+                reflectionVis = true;
+            }
+            else
+            {
+                reflectionContent.style.display = 'none';
+                reflectionBtn.textContent = "+";
+                reflectionBtn.setAttribute("aria-label", "Expand Reflection");
+                reflectionVis = false;
+            }
+        }
 
 
     </script>
