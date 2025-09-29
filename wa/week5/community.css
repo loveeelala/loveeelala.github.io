@@ -11,22 +11,16 @@ body{
     font-style: normal;
     color: #550212;
 }
+
+h1.fredoka-headers{ font-size: 28px;}
+h2.fredoka-headers{ font-size: 24px;}
+h3.fredoka-headers{ font-size: 20px; text-align: center;}
+
 .nunito-body{
     font-family: "Nunito", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #550212;
-}
-
-h3.fredoka-headers{
-    font-size: 20px;
-    text-align: center;
-}
-h2.fredoka-headers{
-    font-size: 24px;
-}
-h1.fredoka-headers{
-    font-size: 28px;
 }
 
 p.nunito-body{
@@ -49,7 +43,7 @@ button{
     background-color: #678055;
     border: none;
     color: #F9F4F5;
-    padding: 1.5px 1.5px;
+    padding: 1.5px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,6 +58,69 @@ button:focus{
     background-color: #053225;
     color: #F9F4F5;
 }
+
+/* homepage */
+.homepage-container{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header{ grid-area: header;}
+nav { grid-area: nav;}
+main { grid-area: main;}
+footer { grid-area: footer;}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card{
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* homepage */
+
+
+/* resource page */
+.resource-container{
+    display: grid; 
+    grid-template-areas: 
+     "header"
+     "nav"
+     "main"
+     "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.resource-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.resource-card{
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+}
+/* resource page */
 
 .main-nav{
     display: flex;
@@ -116,4 +173,3 @@ button:focus{
         padding: 5px;
     }
 }
-

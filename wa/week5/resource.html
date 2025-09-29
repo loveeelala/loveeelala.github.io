@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="community.css">
+
+    <script src="week5-community.js" defer></script>
+
+</head>
+<body>
+
+    <div class="resource-container">
+        <header class="fredoka-headers">
+            Lattice Program Resources
+        </header>
+
+        <nav class="main-nav">
+                <button class="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu hide">
+                    <li><a href="week5-community.html">Home</a></li>
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+
+        <main>
+            <div class="resource-controls" aria-label="Filter Resources">
+                <div id="resource-filter">
+                    <button type="button" data-category="all">All</button>
+                    <button type="button" data-category="scholarship">Scholarship</button>
+                    <button type="button" data-category="mentorship">Mentorship</button>
+                </div>
+            </div>
+
+            <div class="resource-grid">
+                <div class="resource-card" data-category="scholarship">
+                    <h2 class="fredoka-headers">Scholarship Guide</h2>
+                    <p class="nunito-body">Guide to applying for first-generation scholarship.</p>
+                
+                    <div class="feedback">
+                        <span>Was this helpful?</span>
+                        <button type="button" class="feedback-btn" data-type="yes">Yes (<span class="count">0</span>)</button>
+                        <button type="button" class="feedback-btn" data-type="no">No (<span class="count">0</span>)</button>
+
+                    </div>
+                </div>
+
+                <div class="resource-card" data-category="mentorship">
+                    <h2 class="fredoka-headers">Mentorship Program</h2>
+                    <p class="nunito-body">Check our calendar for upcoming cohort workshops.</p>
+
+                    <div class="feedback">
+                        <span>Was this helpful?</span>
+                        <button type="button" class="feedback-btn" data-type="yes">Yes (<span class="count">0</span>)</button>
+                        <button type="button" class="feedback-btn" data-type="no">No (<span class="count">0</span>)</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="nunito-body">2025 Lattice Program</p>
+        </footer>
+    </div>
+</body>
+</html>
