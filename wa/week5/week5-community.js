@@ -52,3 +52,35 @@ feedbackButtons.forEach(button => {
         countSpan.textContent = currentCount+1;
     })
 })
+
+
+// theme
+
+// Save user's theme choice
+function setTheme(theme) {
+    // stores user's theme preference (light/dark) in localStorage
+    localStorage.setItem('userTheme', theme);
+
+    //applies theme by updating class on the document body
+    document.body.className = theme;
+}
+
+// Load saved theme on page load
+window.addEventListener('load', function() {
+    // retreives saved theme from localStorage, defaults to light if none exists
+    const savedTheme = localStorage.getItem('userTheme') || 'light';
+
+    // applies retrieved/default theme to document body
+    document.body.className = savedTheme;
+});
+
+// retrieves theme toggle button element
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', () => {
+    // checks current theme class on body to determine new theme
+    const newTheme = document.body.className === 'dark' ? 'light': 'dark';
+
+    // saves and applies new theme
+    setTheme(newTheme);
+});

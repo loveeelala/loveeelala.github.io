@@ -27,6 +27,10 @@ p.nunito-body{
     color: #550212;
 }
 
+ul li{
+    color: #550212;
+}
+
 a:link{
     color: #550212;
     text-decoration: none; 
@@ -89,6 +93,12 @@ footer { grid-area: footer;}
     background-color: white;
     border-radius: 12px;
     padding: 1rem;
+}
+
+.card ul li,
+.resource-card ul li{
+    color: #550212;
+    list-style-position: inside;
 }
 
 /* homepage */
@@ -172,4 +182,42 @@ footer { grid-area: footer;}
         background-color: white;
         padding: 5px;
     }
+}
+
+/* theme toggle */
+#theme-toggle{
+    margin-left: 15px;
+    padding: 5px 10px;
+}
+
+body.dark{
+    background-color: #550212;
+    color: #F9F4F5;
+}
+
+body.dark .card,
+body.dark .resource-card
+{
+    background-color: #802936;
+    color: #F9F4F5;
+}
+
+body.dark nav,
+body.dark footer{
+    color: #F9F4F5;
+}
+
+body.dark .fredoka-headers,
+body.dark .nunito-body {
+    color: #F9F4F5;
+}
+
+body.dark button{
+    background-color: #4f6340;
+    color: #F9F4F5;
+}
+
+body.dark .card ul li,
+body.dark .resource-card ul li {
+    color: #F9F4F5;
 }
