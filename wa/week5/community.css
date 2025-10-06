@@ -221,3 +221,31 @@ body.dark .card ul li,
 body.dark .resource-card ul li {
     color: #F9F4F5;
 }
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 400px;
+    text-align: center;
+    color: #550212;
+}
+
+.modal.hide{
+    display: none;
+}
+
+body.dark .modal-content{
+    background-color: #802936;
+    color: #F9F4F5
+}

@@ -84,3 +84,32 @@ themeToggleBtn.addEventListener('click', () => {
     // saves and applies new theme
     setTheme(newTheme);
 });
+
+
+// modal
+
+const openPrivacyBtn = document.getElementById('open-privacy');
+const privacyModal = document.getElementById('privacy-modal');
+const closeModalBtn = document.getElementById('close-modal');
+const clearDataBtn = document.getElementById('clear-data-btn');
+
+// open modal
+openPrivacyBtn.addEventListener('click', () => {
+    privacyModal.classList.remove('hide');
+});
+
+closeModalBtn.addEventListener('click', () =>{
+    privacyModal.classList.add('hide');
+});
+
+window.addEventListener('click', (event) =>{
+    if(event.target === privacyModal)
+    {
+        privacyModal.classList.add('hide');
+    }
+});
+
+clearDataBtn.addEventListener('click', () => {
+    localStorage.clear();
+    alert("Your saved data has been cleared.");
+});
