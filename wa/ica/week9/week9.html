@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading Animation</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="week9.css" />
 
-    <style>
-        .box{
-            border: 5px black solid;
-            background-color: red;
-            animation-name: moving-box;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            position: relative;
-        }
-
-        @keyframes moving-box{
-            from{
-                left: 0px;
-                top: 0px;
-                background-color: red;
-            }
-            25%{
-                left: 500px;
-                top: 0px;
-                background-color: blue;
-            }
-            50%{
-                left: 500px;
-                top: 500px;
-                background-color: yellow;
-            }
-            75%{
-                left: 0px;
-                top: 500px;
-                background-color: green;
-            }
-            to{
-                left: 0px;
-                top: 0px;
-                background-color: red;
-            }
-        }
-    </style>
 </head>
 <body>
-    
+
+  <div class="loading-container">
+
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <p class="loading-text">Loading, please wait...</p>
+
+  </div>
+
+  <div class="micro-interaction-container">
+    <p> 
+        Link to micro-interaction made in class 
+        <a href="https://loveeelala.github.io/ica/week9/ICbox.html">here</a>
+    </p>
+  </div>
+
 </body>
 </html>
