@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Critique Project</title>
+
+    <link rel="stylesheet" href="critique.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">TikTok Algorithm Simulation</h1>
+        <p id="subtitle">Explore how algorithmic priorites change who gets seen.</p>
+    </header>
+
+    <nav aria-label="Feed Controls">
+        <p>Adjust Algorithm Focus:</p>
+
+        <div class="buttons">
+            <button id="popular" aria-pressed="true">Popular</button>
+            <button id="diverse" aria-pressed="false">Diverse</button>
+            <button id="educational" aria-pressed="false">Educational</button>
+        </div>
+    </section>
+
+    <section id="explanation" aria-live="polite">
+        Showing feed prioritized for popular content.
+    </section>
+
+    <main id="feed" tabindex="0" aria-label="Video Feed" role="feed">
+        
+    </main>
+
+    <footer>
+        <p class="note">
+            This simulation visualizes how TikTok's algorithm amplifies or hides creators
+            based on engagement-driven priorites.
+        </p>
+    </footer>
+
+    <script src="critique.js"></script>
+
+</body>
+</html>
