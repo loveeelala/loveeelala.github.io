@@ -4,44 +4,16 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
-  padding: 2em;
+  padding: 2rem;
 }
 
-header, footer {
-  margin-bottom: 1.5em;
-}
-
-#controls,
-nav {
-  margin: 1rem 0;
-}
-
-button {
-  background: #333;
-  color: white;
-  border: 2px solid transparent;
-  padding: 10px 15px;
-  margin: 15px 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.2s;
-}
-
-button:hover {
-  background: #555;
-}
-
-button:focus {
-  outline: 3px solid #00b4d8; 
-  outline-offset: 3px;
-  transform: scale(1.05);
-}
-
-/* Active (aria-pressed=true) state */
-button[aria-pressed="true"] {
-  background: #00b4d8;
-  color: #111;
+#critique {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: #222;
+  border-radius: 10px;
+  text-align: left;
 }
 
 /* Feed layout */
@@ -50,37 +22,90 @@ button[aria-pressed="true"] {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 }
 
-/* Posts */
-.post {
+.slider-group{
   width: 300px;
-  padding: 1em;
-  border-radius: 10px;
-  color: white;
-  transition: opacity 0.3s, transform 0.3s;
+  margin: 0 auto;
   text-align: left;
 }
 
-/* Color-coded post types */
-.popular {
-  background: #ff006e;
+.slider-group label{
+  display: block;
+  margin-top: 1rem;
 }
 
-.diverse {
-  background: #00b4d8;
-  color: #000;
+.slider-group input[type="range"]{
+  width: 100%;
+  margin-top: 0.3rem;
+  cursor: pointer;
 }
 
-.educational {
-  background: #8338ec;
+.post {
+  width: 320px;
+  height: 520px;
+  background: #000;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
 }
 
-/* Focused or hovered posts */
-.post:hover,
-.post:focus {
-  outline: 3px solid #fff;
-  outline-offset: 3px;
-  transform: scale(1.03);
+.post .video-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+}
+
+.post .creator-info {
+  position: relative;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.creator-name{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.creator-stats{
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.caption{
+  margin-top: 4px;
+}
+
+.actions{
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.actions div{
+  font-size: 0.8rem;
+}
+
+.suppressed{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  background: rgba(255,0,0,0.9);
+  border-radius: 6px;
 }

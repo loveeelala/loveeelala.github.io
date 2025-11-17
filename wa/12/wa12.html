@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Systems Critique Project</title>
 
-    <link rel="stylesheet" href="critique.css">
+    <link rel="stylesheet" href="wa12.css">
 </head>
 <body>
     <header>
         <h1 id="main-title">TikTok Algorithm Simulation</h1>
-        <p id="subtitle">Explore how algorithmic priorites change who gets seen.</p>
     </header>
 
-    <nav aria-label="Feed Controls">
-        <p>Adjust Algorithm Focus:</p>
-
-        <div class="buttons">
-            <button id="popular" aria-pressed="true">Popular</button>
-            <button id="diverse" aria-pressed="false">Diverse</button>
-            <button id="educational" aria-pressed="false">Educational</button>
-        </div>
+    <section id="critique">
+        <h2>Systems Critique</h2>
+        <p>This project critiques TikTok's For You Page algorithm, showing how engagement-driven
+            ranking can bury diverse or educational creators while boosting already popular content. </p>
     </section>
+
+    <nav aria-label="Feed Controls">
+        <p>Adjust Algorithm Bias:</p>
+
+        <div class="slider-group">
+            <label for="popularity">Popularity Priority</label>
+            <input type="range" id="popularity" min="0" max="100" value="80">
+
+            <label for="diversity">Diversity Priority</label>
+            <input type="range" id="diversity" min="0" max="100" value="40">
+
+            <label for="education">Educational Priority</label>
+            <input type="range" id="education" min="0" max="100" value="30">
+        </div>
+    </nav>
 
     <section id="explanation" aria-live="polite">
-        Showing feed prioritized for popular content.
+        Algorithm explanation will appear here.
     </section>
 
-    <main id="feed" tabindex="0" aria-label="Video Feed" role="feed">
-        
-    </main>
+    <main id="feed" tabindex="0" aria-label="Video Feed" role="feed"></main>
 
     <footer>
         <p class="note">
@@ -38,7 +46,7 @@
         </p>
     </footer>
 
-    <script src="critique.js"></script>
+    <script src="wa12.js"></script>
 
 </body>
 </html>
