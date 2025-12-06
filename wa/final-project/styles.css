@@ -1,0 +1,145 @@
+html, body{
+    background-color: #F9F4F5;
+    font-family: "Nunito", sans-serif;
+    color: #550212;
+
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+main{
+    flex: 1;
+}
+
+.fredoka-headers{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #550212;
+}
+.nunito-body{
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #550212;
+}
+
+h3.fredoka-headers{
+    font-size: 20px;
+}
+h2.fredoka-headers{
+    font-size: 24px;
+}
+h1.fredoka-headers{
+    font-size: 28px;
+    color: white;
+}
+
+header{
+    background-color: #678055;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+p.nunito-body{
+    color: #550212;
+}
+
+a:link{
+    color: #550212;
+    text-decoration: none; 
+}
+a:visited{
+    color: #053225;
+}
+a:hover{
+    text-decoration: underline;
+    color: #678055;
+}
+
+button{
+    background-color: #678055;
+    border: none;
+    color: #F9F4F5;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Fredoka", sans-serif;
+}
+button:hover{
+    background-color: #053225;
+    color: #F9F4F5;
+}
+button:focus{
+    background-color: #053225;
+    color: #F9F4F5;
+}
+img{
+    border: 3px solid #678055;
+}
+
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-image img{
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #053225;
+    object-fit: cover;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-image img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #053225;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #678055;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
