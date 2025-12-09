@@ -2,7 +2,6 @@ html, body{
     background-color: #F9F4F5;
     font-family: "Nunito", sans-serif;
     color: #550212;
-
     display:flex;
     flex-direction: column;
     height: 100%;
@@ -11,6 +10,7 @@ html, body{
 
 main{
     flex: 1;
+    background-color: inherit;
 }
 
 .fredoka-headers{
