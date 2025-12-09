@@ -320,3 +320,39 @@ footer{
     z-index: -1;
     pointer-events: none;
 }
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+}
+
+.contact-left{
+    background: white;
+    border: 3px solid #678055;
+    border-radius: 16px;
+    padding: 30px 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.contact-inputs{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 2px solid #678055;
+}
+
+.contact-inputs:focus{
+    border-color: #053225;
+}
+
+.contact-left button{
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
